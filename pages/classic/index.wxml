@@ -1,0 +1,12 @@
+<view class="header">
+  <h-episode index="{{classic.index+1}}" class="episode"></h-episode>
+  <h-like
+    like="{{classic.like_status}}"
+    count="{{classic.fav_nums}}"
+    bind:like="onLike"
+    ></h-like>
+</view>
+
+<h-movie img="{{classic.image}}" content="{{classic.content}}"></h-movie>
+
+<h-nav class="nav" bind:left="onNext" bind:right="onPrevious" title="{{classic.title}}" first="{{first}}" latest="{{latest}}"></h-nav>
