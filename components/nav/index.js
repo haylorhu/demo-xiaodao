@@ -1,8 +1,9 @@
 // components/nav/nav.js
 Component({
-  /**
-   * 组件的属性列表
-   */
+  options:{
+    multipleSlots:true
+  },
+  externalClasses:['tag-class'],
   properties: {
     title:String,
     first:Boolean,

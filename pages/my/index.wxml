@@ -1,0 +1,36 @@
+<!--pages/my/index.wxml-->
+<view class="my-container">
+    <view class="my-info">
+        <view class="my-photo">
+            <image></image>
+            <view class="name"></view>
+        </view>
+        <view>
+            <icon class="" type="success|success_no_circle|info|warn|waiting|cancel|download|search|clear" size="23" color="">
+                
+            </icon>
+            <icon class="" type="success|success_no_circle|info|warn|waiting|cancel|download|search|clear" size="23" color="">
+                
+            </icon>
+              
+        </view>
+    </view>
+    <view class="my-favor">
+        <view>
+            <text class="favor-num">1 </text>
+            <text class="favor-item"> 收藏</text>
+
+        </view>
+    </view>
+    <view class="vip">
+        <view class="vip-logo"></view>
+        <view>
+                <text>花小积分，兑大权益</text>
+                <text>进入我的会员中心</text>
+        </view>
+        <image></image>    
+    </view>
+    <view class="my-order">
+        
+    </view>
+</view>

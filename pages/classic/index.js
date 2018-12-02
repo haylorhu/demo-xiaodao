@@ -37,7 +37,7 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {
+  data:{
     classic: null,
     latest: true,
     first: false
@@ -53,6 +53,7 @@ Page({
         classic: res
       });
     });
+
   },
 
   /**

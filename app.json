@@ -1,8 +1,37 @@
 {
   "pages": [
-    "pages/classic/index"
+    "pages/classic/index",
+    "pages/book/index",
+    "pages/my/index",
+    "pages/book-detail/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FFF000"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "color": "#c7c7c7",
+    "list": [
+      {
+        "pagePath": "pages/classic/index",
+        "selectedIconPath": "/images/tabs/classic@highlight.png",
+        "iconPath": "/images/tabs/classic.png",
+        "text": "流行"
+      },
+      {
+        "pagePath": "pages/book/index",
+        "selectedIconPath": "/images/tabs/book@highlight.png",
+        "iconPath": "/images/tabs/book.png",
+        "text": "书单"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "selectedIconPath": "/images/tabs/my@highlight.png",
+        "iconPath": "/images/tabs/my.png",
+        "text": "喜欢"
+      }
+    ]
   }
 }

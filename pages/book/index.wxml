@@ -1,0 +1,21 @@
+
+
+<view class="header">
+    <view class='box' bind:tap="onActivateSearch">
+     <image src="/images/icon/search.png" />
+     <text>搜索书籍</text>
+   </view> 
+ </view> 
+ <view class="sub-container">
+    <image class="head-img" src="/images/book/quality.png" />
+    <view class="books-container">
+    </view>
+    <view class="book-wiper">
+        <block wx:for="{{books}}" wx:key="{{index}}">
+            <h-book class="book-item" book="{{item}}"></h-book>
+                
+            </block>
+    </view>
+
+  </view> 
+  <h-search wx:if="{{searching}}"></h-search>

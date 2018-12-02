@@ -1,0 +1,67 @@
+<wxs src="../../util/filter.wxs" module="util"></wxs>
+
+<view class="container">
+  <view class="head">
+    <image src="{{book.image}}"></image>
+    <text class="title">{{ book.title }}</text>
+    <text class="author">{{ book.author }}</text>
+  </view>
+  <view class="sub-container">
+    <text class="headline">短评</text>
+    <view class="comment-container">
+      <block wx:for="{{comments.comment}}" wx:key="index">
+        <h-tag tag-class="ex-tag" text="{{item.content}}">
+          <text slot="after">+{{ item.nums }}</text>
+        </h-tag>
+      </block>
+    </view>
+  </view>
+  <view class="introduce">
+    <text class="info">书籍介绍</text>
+    <text decode="" class="info-content">
+      该书作为主流的动态语言，python不仅简单易学、移植性好，而且拥有强大丰富的库的支持。c/c++程序中，为自己的系统添加动态扩展和动态编程的能力。
+      为了更好地利用python语言，无论是使用python语言本身，还是将python与c/c++交互使用，深刻理解python的运行原理都是非常重要的。
+      本书适合于python程序员、动态语言爱好者、c程序员阅读。
+    </text>
+  </view>
+  <view class="sub-container">
+    <text class="headline">书本信息</text>
+    <view class="detail-contaner">
+      <view class="vertical">
+        <text class="description">出版社</text>
+        <text class="description">出版年</text>
+        <text class="description">页数</text>
+        <text class="description">定价</text>
+        <text class="description">装帧</text>
+      </view>
+      <view class="vertical">
+        <text class="">{{ book.publisher }}</text>
+        <text class="">{{ book.pubdate }}</text>
+        <text class="">{{ book.pages }}</text>
+        <text class="">{{ book.price }}</text>
+        <text class="">{{ book.binding }}</text>
+      </view>
+    </view>
+  </view>
+  <view class="post-container" wx:if="{{!posting}}">
+    <view bind:tap="onFakePost" class="post-fake"> 
+      <text>输入短评</text> 
+    </view>
+    <view class="like-container">
+      <v-like bind:like="onLike" class="like"
+        like="{{likeStatus}}" count="{{likeCount}}"
+      ></v-like>
+    </view>
+  </view>
+
+  <view class="posting-container" wx:if="{{posting}}">
+    <view class="post-header">
+        <text>仅可点击标签+1</text>
+        <text class="cancel" bind:tap="cancle">取消</text>
+    </view>
+    <view class="comment-container" >
+        <input class="post" placeholder="短评最多12个字"></input>
+        </view>
+  </view>
+</view>
+<v-mask wx:if="{{posting}}"></v-mask>

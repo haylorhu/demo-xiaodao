@@ -1,5 +1,6 @@
 /* components/nav/nav.wxss */
 .container{
+
     width:600rpx;
     height:80rpx;
     background-color: #f7f7f7;

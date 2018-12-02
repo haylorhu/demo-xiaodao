@@ -4,9 +4,29 @@
     like="{{classic.like_status}}"
     count="{{classic.fav_nums}}"
     bind:like="onLike"
-    ></h-like>
+  ></h-like>
 </view>
-
-<h-movie img="{{classic.image}}" content="{{classic.content}}"></h-movie>
-
-<h-nav class="nav" bind:left="onNext" bind:right="onPrevious" title="{{classic.title}}" first="{{first}}" latest="{{latest}}"></h-nav>
+<h-movie
+  hidden="{{classic.type != 100}}"
+  img="{{classic.image}}"
+  content="{{classic.content}}"
+></h-movie>
+<h-essay
+  hidden="{{classic.type != 300}}"
+  img="{{classic.image}}"
+  content="{{classic.content}}"
+></h-essay>
+<h-music
+ wx:if="{{classic.type == 200}}"
+  img="{{classic.image}}"
+  content="{{classic.content}}"
+  src="{{classic.url}}"
+></h-music>
+<h-nav
+  class="nav"
+  bind:left="onNext"
+  bind:right="onPrevious"
+  title="{{classic.title}}"
+  first="{{first}}"
+  latest="{{latest}}"
+>123</h-nav>
