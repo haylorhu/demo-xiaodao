@@ -8,11 +8,12 @@
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"autoAudits": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.4.0",
-	"appid": "wxafebd2cb445facd6",
+	"appid": "wx1f23ddafb2a56fad",
 	"projectname": "xiao",
 	"debugOptions": {
 		"hidedInDevtools": []

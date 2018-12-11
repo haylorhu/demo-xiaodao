@@ -21,6 +21,7 @@
   img="{{classic.image}}"
   content="{{classic.content}}"
   src="{{classic.url}}"
+  musicTitle="{{classic.title}}"
 ></h-music>
 <h-nav
   class="nav"

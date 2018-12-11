@@ -1,1 +1,23 @@
-/* pages/my/index.wxss */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    position: relative;
+    top:200rpx;
+}
+.bg{
+    width: 750rpx;
+    height: 574rpx;
+}
+
+.avatar-position{
+    position: absolute;
+    top:255rpx;
+}
+.avator{
+    width: 120rpx;
+    height: 120rpx;
+    overflow: hidden;
+    border-radius: 50%
+}

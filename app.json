@@ -8,6 +8,7 @@
   "window": {
     "navigationBarBackgroundColor": "#FFF000"
   },
+  "requiredBackgroundModes":["audio"],
   "tabBar": {
     "borderStyle": "black",
     "selectedColor": "#000000",

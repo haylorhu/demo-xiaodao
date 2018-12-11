@@ -18,7 +18,7 @@
   </view>
   <view class="introduce">
     <text class="info">书籍介绍</text>
-    <text decode="" class="info-content">
+    <text decode="true" class="info-content">
       该书作为主流的动态语言，python不仅简单易学、移植性好，而且拥有强大丰富的库的支持。c/c++程序中，为自己的系统添加动态扩展和动态编程的能力。
       为了更好地利用python语言，无论是使用python语言本身，还是将python与c/c++交互使用，深刻理解python的运行原理都是非常重要的。
       本书适合于python程序员、动态语言爱好者、c程序员阅读。
